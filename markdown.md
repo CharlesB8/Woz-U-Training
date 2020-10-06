@@ -1,6 +1,5 @@
 # Heading 1 
-## Heading 2
-### Heading 3
+
 
 Line break  
 Hello  
@@ -12,17 +11,21 @@ Hello
 >Dinosaurs
 >>hello
 
--list item one  
+## A Nice List
+-list item 1 
 -list item 2  
 -list item 3  
 
-1. List item one  
+## A List of Fruit
+1. Bananas 
 2. Oranges  
-3.
+3. Apples
 
-- [ ] check
-- [x] check
+- [ ] unchecked
+- [x] checked  
 
+
+## How to Code Java    
 ```java
 public class Main {
   public static void main (String[] args){
