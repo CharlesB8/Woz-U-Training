@@ -50,3 +50,41 @@ class Solution{
     }
 }
 ```
+
+# Scanner
+
+```java 
+
+import java.time.LocalDate;
+import java.util.*;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+				// how to make a scanner
+				Scanner scan = new Scanner(System.in);
+				
+        System.out.println("Name: ");
+				String name = scan.next();
+        
+        
+				// reading input from scanner
+				System.out.println("Email: ");
+				String email = scan.next();
+				
+				//output our read info
+				System.out.print("Date: ");
+        String dateString = scan.next();
+
+        LocalDate date = LocalDate.parse(dateString); 
+
+        
+        scan.close(); 
+        System.out.println("Hello " + name + ", my email is " + email + ". today is " + date);
+        
+				
+		}
+
+	}
+```
