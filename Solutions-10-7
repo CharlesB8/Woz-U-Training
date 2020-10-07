@@ -1,0 +1,54 @@
+# Code wars solution
+
+
+``` java
+import java.util.*;
+
+public class EvenNumbers {
+  public static int[] divisibleBy(int[] numbers, int divider) {
+    ArrayList<Integer> myList = new ArrayList<>();
+    
+    for (int i : numbers) {
+      if (i % divider == 0) { 
+        myList.add(i); 
+        }
+                            
+      }
+      
+      int[] myArray = new int[myList.size()];
+      
+      for(int i = 0; i < myArray.length; i++) {
+        myArray[i] = myList.get(i);
+      }
+      
+      return myArray;
+    }
+  }
+```
+
+# Leet code solution
+
+
+```java
+import java.util.*;
+
+class Solution {
+    public int[] createTargetArray(int[] nums, int[] index) {
+       
+        ArrayList<Integer> myArrayList = new ArrayList<>(indexes.length);
+        int[] myArray = new int[index.length];
+        
+        for(int i = 0; i < index.length; i++) {
+            myArrayList.add(index[i], nums[i]);
+            
+        }
+        for (int i = 0; i < myArrayList.size(); i++) {
+            myArray[i] = myArrayList.get(i);
+        }
+        
+        return myArray; 
+        
+        
+    }
+}
+```
