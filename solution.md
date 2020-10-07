@@ -62,26 +62,27 @@ import java.util.*;
 public class Main {
 
 	public static void main(String[] args) {
-				// how to make a scanner
-				Scanner scan = new Scanner(System.in);
-				
-        System.out.println("Name: ");
-				String name = scan.next();
-        
-        
-				// reading input from scanner
-				System.out.println("Email: ");
-				String email = scan.next();
-				
-				//output our read info
-				System.out.print("Date: ");
-        String dateString = scan.next();
+		//initialize scanner				
+		Scanner scan = new Scanner(System.in);
+		
+		//take in name input
+		System.out.println("Name: ");
+		String name = scan.next();
 
+
+		// take in email
+		System.out.println("Email: ");
+		String email = scan.next();
+
+		//take in date
+		System.out.print("Date: ");
+		String dateString = scan.next();
+	//change String input into date time int
         LocalDate date = LocalDate.parse(dateString); 
 
-        
+        //close scanner and print results
         scan.close(); 
-        System.out.println("Hello " + name + ", my email is " + email + ". today is " + date);
+        System.out.println("Hello " + name + ", my email is " + email + ". Here is a date " + date);
         
 				
 		}
